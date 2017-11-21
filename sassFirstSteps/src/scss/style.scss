@@ -1,0 +1,16 @@
+body {
+  background: #000;
+
+  section {
+    background: #FFF;
+
+    &.error {
+      background: blue;
+    }
+  }
+}
+
+.message{
+  font-size: 15px;
+  color: blue;
+}

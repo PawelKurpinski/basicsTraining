@@ -1,0 +1,49 @@
+body{
+    background-image: url(../img/tweed.png);
+    margin: 0px;
+}
+.container{
+    background-color: white;
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    /*font-size: 0;*/
+}
+.logo{
+    background-color: gray;
+    width: 900px;
+    height: 60px;
+}
+.menu{
+    background-color: black;
+    width: 900px;
+    height: 40px;
+}
+.nav{
+    background-color: coral;
+    width: 250px;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -4px;
+}
+.content{
+    background-color: skyblue;
+    width: 450px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -4px;
+}
+.sidebar{
+    background-color: teal;
+    width: 192px;
+    height: 300px;
+    display: inline-block;
+    margin-right: -4px;
+}
+.footer{
+    background-color: RebeccaPurple;
+    width: 900px;
+    height: 100px;
+    display: inline-block;
+}
