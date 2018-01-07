@@ -6,8 +6,8 @@ function myFunction(){
 myObject.funk = myFunction;
 
 var person = {
-    name: Paweł;
-    surname: Karpik;
+    name: "Paweł",
+    surname: "Karpik",
     print: function(){
         console.log(this.name)
     }
@@ -15,7 +15,7 @@ var person = {
 
 
 function Animal(getName, getSound){
-	this.name = getName;
+	this.name = getName,
 	this.sound = getSound(){
 	console.log(getSound)
         }
@@ -23,3 +23,31 @@ function Animal(getName, getSound){
 
 var dog = new Animal("Reksio","wow wow");
 	dog.sound();
+
+
+
+
+function Person(name){
+    this.name = name;
+    this.sayHi = function(){
+    return "Hi " + this.name;
+    }
+}
+elie = new Person("Elie");
+elie.sayHi();
+
+// inna opcja to poniższy zapis
+
+function Person(name){
+    this.name = name;
+}
+
+Person.prototype.sayHi = function(){
+    return "Hi " + this.name;
+}
+elie = new Person("Elie");
+elie.sayHi();
+
+// Exercise
+
+function Vehicle =
