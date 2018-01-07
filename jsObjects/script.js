@@ -50,4 +50,21 @@ elie.sayHi();
 
 // Exercise
 
-function Vehicle =
+function Vehicle(make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.isRunning = false;
+}
+
+Vehicle.prototype.turnOn = function(){
+    return this.isRunning = true;
+}
+Vehicle.prototype.turnOff = function(){
+    return this.isRunning = false;
+}
+Vehicle.prototype.honk = function(){
+    if (this.isRunning){
+    return "beep!";
+    }
+} 
