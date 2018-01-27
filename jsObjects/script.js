@@ -67,4 +67,4 @@ Vehicle.prototype.honk = function(){
     if (this.isRunning){
     return "beep!";
     }
-} 
+}
