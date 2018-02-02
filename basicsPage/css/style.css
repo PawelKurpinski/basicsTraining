@@ -1,12 +1,13 @@
-*,
-*:before,
-*:after {
+html {
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
 }
 
-.container {
-    max-width: 80px;
-    margin-left: 100px;
+.contaniner {
+    max-width: 1000px;
+    margin: 20px auto;
+    border: 1 px solid #bdb2b2;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
 }
