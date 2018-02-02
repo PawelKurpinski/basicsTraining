@@ -9,5 +9,10 @@ html {
     margin: 20px auto;
     border: 1 px solid #bdb2b2;
     border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+    /*35 to wielkość rozmycia*/
+}
+
+header {
+    display: flex;
 }
