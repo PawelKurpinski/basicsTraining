@@ -67,7 +67,6 @@ html {
 headerTwo {
     width: font-size: 12px;
     color: rgb(210, 210, 210);
-    border: 2px solid red;
     margin-left: 120px;
 }
 
@@ -76,4 +75,46 @@ headerTwo {
     width: 1170px;
     height: 870px;
     margin: 0 auto;
+}
+
+li:first-child {
+    margin-left: px;
+}
+
+.headerTwo_ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: -6px;
+}
+
+li:last-child {
+    border: 2px solid red;
+    justify-content: flex-end;
+    margin-right: 90px;
+}
+
+.border {
+    width: auto;
+    height: 1px;
+    background-color: #E9E9E9;
+}
+
+.main_line {
+    height: 73px;
+    color: rgb(0, 48, 84);
+    border: 1px red solid;
+}
+
+.main_line_ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.more {
+    height: 162px;
+    width: auto;
+    background-color: rgb(234, 234, 234)
 }
