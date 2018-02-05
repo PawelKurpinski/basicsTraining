@@ -71,7 +71,6 @@ headerTwo {
 }
 
 .main {
-    border: red solid 3px;
     width: 1170px;
     height: 870px;
     margin: 0 auto;
@@ -103,7 +102,6 @@ li:last-child {
 .main_line {
     height: 73px;
     color: rgb(0, 48, 84);
-    border: 1px red solid;
 }
 
 .main_line_ul {
