@@ -9,6 +9,10 @@ html {
     font-family: Arial;
 }
 
+.container {
+    height: 870px;
+}
+
 .main-width {
     width: 1170px;
 }
