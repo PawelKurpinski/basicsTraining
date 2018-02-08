@@ -14,8 +14,6 @@ html {
     max-height: height: 870px;
 }
 
-
-
 .main-width {
     width: 1170px;
 }
@@ -110,7 +108,7 @@ li:last-child {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding-top: 2px;
+    padding-top: 10px;
     margin-left: 20px;
     font-size: 10px;
 }
@@ -122,6 +120,7 @@ li:last-child {
 .more_line_desc li:nth-child(2) {
     margin-right: px
 }
+
 .more_line_desc li:nth-child(3) {
     margin-right: 240px;
 }
@@ -146,10 +145,40 @@ li:last-child {
     justify-content: space-between;
     list-style: none;
     margin-left: 20px;
+    margin-top: px;
 }
 
 .more {
     height: 162px;
+    padding-left: 30px;
     width: auto;
     background-color: rgb(234, 234, 234)
+}
+
+.more_line_desc_two {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 50px;
+    font-size: 10px;
+}
+
+.more_line_desc_two li:first-child {
+    margin-left: 20px;
+}
+
+.more_line_desc_two li:nth-child(2) {
+    margin-left: -310px;
+}
+
+.more_line_desc_two li:last-child {
+    position: relative;
+    right: 313px;
+}
+
+.more_line_ul_two {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 20px;
 }
