@@ -93,9 +93,9 @@ li:first-child {
 }
 
 li:last-child {
-    border: 2px solid red;
     justify-content: flex-end;
     margin-right: 90px;
+    color: red;
 }
 
 .border {
@@ -109,20 +109,22 @@ li:last-child {
     justify-content: space-around;
     list-style: none;
     padding-top: 10px;
-    margin-left: 20px;
+    margin-left: 28px;
     font-size: 10px;
+    text-transform: uppercase
 }
 
 .more_line_desc li:first-child {
-    margin-left: -150px
+    margin-left: -151px
 }
 
 .more_line_desc li:nth-child(2) {
-    margin-right: px
+    margin-right: 10px
 }
 
 .more_line_desc li:nth-child(3) {
-    margin-right: 240px;
+    margin-right: 222px;
+    color: black;
 }
 
 .main_line {
@@ -136,7 +138,7 @@ li:last-child {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 27px;
     margin-left: 25px;
 }
 
@@ -161,6 +163,7 @@ li:last-child {
     list-style: none;
     padding-top: 50px;
     font-size: 10px;
+    text-transform: uppercase;
 }
 
 .more_line_desc_two li:first-child {
@@ -168,12 +171,11 @@ li:last-child {
 }
 
 .more_line_desc_two li:nth-child(2) {
-    margin-left: -310px;
+    margin-left: 95px;
 }
 
-.more_line_desc_two li:last-child {
-    position: relative;
-    right: 313px;
+.more_line_desc_two li:last-child(1) {
+    margin-left: 30px;
 }
 
 .more_line_ul_two {
@@ -181,4 +183,16 @@ li:last-child {
     justify-content: space-between;
     list-style: none;
     margin-left: 20px;
+}
+
+.more_line_ul_two li:nth-child(2) {
+    margin-left: 23px;
+}
+
+.more_line_ul_two li:nth-child(2) {
+    margin-left: 47px;
+}
+
+.more_line_ul_two li:nth-child(3) {
+    margin-right: 68px;
 }
