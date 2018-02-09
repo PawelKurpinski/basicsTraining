@@ -126,6 +126,10 @@ li:last-child {
     text-transform: uppercase
 }
 
+.more_line_ul_two li:last-child {
+    color: rgb(0, 48, 84);
+}
+
 .more_line_desc li:first-child {
     margin-left: -151px
 }
@@ -136,6 +140,10 @@ li:last-child {
 
 .more_line_desc li:nth-child(3) {
     margin-right: 227px;
+    color: rgb(0, 48, 84);
+}
+
+.more_line_desc_two li:nth-child(4) {
     color: rgb(0, 48, 84);
 }
 
