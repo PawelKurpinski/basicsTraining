@@ -40,6 +40,7 @@ html {
     color: white;
     font-weight: ;
     margin-left: 550px;
+    color: red
 }
 
 .headerOne_input {
@@ -219,4 +220,8 @@ li:last-child {
 
 .more {
     color: rgb(0, 48, 84);
+}
+
+span {
+    color: red;
 }
