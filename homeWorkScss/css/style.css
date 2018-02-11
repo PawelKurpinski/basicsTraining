@@ -7,10 +7,10 @@ html {
   font-size: 16px;
   font-family: Arial; }
 
-.container {
+html .container {
   max-height: 870px; }
 
-.main-width {
+html .container .main-width {
   width: 1170px; }
 
 .headerOne {
@@ -63,27 +63,29 @@ headerTwo {
   color: #d2d2d2;
   margin-left: 120px; }
 
-.main {
-  width: 1170px;
-  height: 870px;
-  margin: 0 auto; }
-
-.headerTwo_ul {
+headerTwo ul {
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin-bottom: -6px;
-  margin-left: 52px; }
+  margin-left: 52px;
+  text-transform: uppercase li; }
 
-.headerTwo_ul li:nth-child(2) {
+headerTwo ul :nth-child(2) {
   margin-left: -12px; }
 
-.headerTwo_ul li:nth-child(3) {
-  margin-right: 356px;
+headerTwo ul li:nth-child(3) {
+  margin-right: 357px;
   color: #d2d2d2; }
 
-.more_line_ul li:nth-child(2) {
+headerTwo ul li:nth-child(2) {
   margin-left: -6px; }
+
+.main {
+  width: 1170px;
+  height: 870px;
+  margin: 0 auto; }
 
 li:last-child {
   justify-content: flex-end;
@@ -144,7 +146,8 @@ li:last-child {
   height: 162px;
   padding-left: 30px;
   width: auto;
-  background-color: #eaeaea; }
+  background-color: #eaeaea;
+  color: #003054; }
 
 .more.collapsed {
   display: none; }
@@ -177,9 +180,6 @@ li:last-child {
 
 .more_line_ul_two li:nth-child(3) {
   margin-right: 68px; }
-
-.more {
-  color: #003054; }
 
 span {
   color: red; }
