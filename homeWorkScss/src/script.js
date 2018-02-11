@@ -1,11 +1,21 @@
-const less = document.getElementById('change');
+const mainBlock = document.getElementById('one');
 
-const moreToggle = document.getElementById('one');
+const lessClick = document.getElementById('onChange');
 
-less.classList.add('collapsed');
+mainBlock.classList.add('collapsed');
 
 function lessToggle() {
-    moreToggle.classList.toggle('collapsed');
+    mainBlock.classList.add('collapsed');
 }
 
-less.addEventListener('click', lessToggle);
+lessClick.addEventListener('click', lessToggle);
+
+const moreClick = document.getElementById('offChange');
+
+mainBlock.classList.remove('collapsed');
+
+function moreToggle() {
+    mainBlock.classList.toggle('collapsed');
+}
+
+moreClick.addEventListener('click', moreToggle);
