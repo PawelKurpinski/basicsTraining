@@ -76,7 +76,7 @@ container {
     font-size: 30px;
 }
 
-headerTwo {
+.headerTwo {
     font-size: 12px;
     color: rgb(210, 210, 210);
     margin-left: 120px;
@@ -93,7 +93,8 @@ headerTwo {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-bottom: -6px;
+    margin-bottom: 12px;
+    margin-top: 12px;
     margin-left: 52px;
     li {
         &:nth-child(2) {
