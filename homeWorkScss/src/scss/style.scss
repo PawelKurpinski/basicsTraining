@@ -1,7 +1,4 @@
-html,
-body,
-ul,
-ol {
+html, body, ul, ol {
     margin: 0;
     padding: 0;
 }
@@ -16,11 +13,11 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: Arial;
-    container {
-    max-height: 870px;
-}
 }
 
+container {
+    max-height: 870px;
+}
 
 .main-width {
     width: 1170px;
@@ -47,7 +44,7 @@ html {
     font-size: 13px;
     color: white;
     margin-left: 550px;
-    color: red
+    color: red;
 }
 
 .headerOne_input {
@@ -98,15 +95,15 @@ headerTwo {
     list-style: none;
     margin-bottom: -6px;
     margin-left: 52px;
-}
-
-.headerTwo_ul li:nth-child(2) {
-    margin-left: -12px;
-}
-
-.headerTwo_ul li:nth-child(3) {
-    margin-right: 356px;
-    color: rgb(210, 210, 210);
+    li {
+        &:nth-child(2) {
+            margin-left: -12px;
+        }
+        &:nth-child(3) {
+            margin-right: 356px;
+            color: rgb(210, 210, 210);
+        }
+    }
 }
 
 .more_line_ul li:nth-child(2) {
@@ -134,34 +131,34 @@ li:last-child {
     padding-top: 10px;
     margin-left: 28px;
     font-size: 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .more_line_ul_two li:last-child {
     color: $main-color;
 }
 
-.more_line_desc li:first-child {
-    margin-left: -151px
-}
-
-.more_line_desc li:nth-child(2) {
-    margin-left: -20px;
-}
-
-.more_line_desc li:nth-child(3) {
-    margin-right: 220px;
-    color: $main-color;
+.more_line_desc li {
+    &:first-child {
+        margin-left: -151px;
+    }
+    &:nth-child(2) {
+        margin-left: -20px;
+    }
+    &:nth-child(3) {
+        margin-right: 220px;
+        color: rgb(0, 48, 84);
+    }
 }
 
 .more_line_desc_two li:nth-child(4) {
-    color: $main-color;
+    color: r$main-color;
     margin-right: 120px;
 }
 
 .main_line {
     height: 73px;
-    color: $main-color;
+    color: rgb(0, 48, 84);
     padding-left: 25px;
     padding-top: 10px;
 }
@@ -185,11 +182,10 @@ li:last-child {
     height: 162px;
     padding-left: 30px;
     width: auto;
-    background-color: rgb(234, 234, 234)
-}
-
-.more.collapsed{
-    display: none;
+    background-color: rgb(234, 234, 234);
+    &.collapsed {
+        display: none;
+    }
 }
 
 .more_line_desc_two {
@@ -199,18 +195,17 @@ li:last-child {
     padding-top: 50px;
     font-size: 10px;
     text-transform: uppercase;
-}
-
-.more_line_desc_two li:first-child {
-    margin-left: 20px;
-}
-
-.more_line_desc_two li:nth-child(2) {
-    margin-left: 180px;
-}
-
-.more_line_desc_two li:nth-child(3) {
-    margin-right: 108px;
+    li {
+        &:first-child {
+            margin-left: 20px;
+        }
+        &:nth-child(2) {
+            margin-left: 180px;
+        }
+        &:nth-child(3) {
+            margin-right: 108px;
+        }
+    }
 }
 
 .more_line_ul_two {
@@ -218,14 +213,14 @@ li:last-child {
     justify-content: space-between;
     list-style: none;
     margin-left: 20px;
-}
-
-.more_line_ul_two li:nth-child(2) {
-    margin-left: 59px;
-}
-
-.more_line_ul_two li:nth-child(3) {
-    margin-right: 68px;
+    li {
+        &:nth-child(2) {
+            margin-left: 59px;
+        }
+        &:nth-child(3) {
+            margin-right: 68px;
+        }
+    }
 }
 
 .more {

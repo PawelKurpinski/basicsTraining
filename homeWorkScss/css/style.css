@@ -1,7 +1,4 @@
-html,
-body,
-ul,
-ol {
+html, body, ul, ol {
   margin: 0;
   padding: 0; }
 
@@ -13,7 +10,7 @@ html {
   font-size: 16px;
   font-family: Arial; }
 
-html container {
+container {
   max-height: 870px; }
 
 .main-width {
@@ -127,7 +124,7 @@ li:last-child {
   color: #003054; }
 
 .more_line_desc_two li:nth-child(4) {
-  color: #003054;
+  color: r #003054;
   margin-right: 120px; }
 
 .main_line {
