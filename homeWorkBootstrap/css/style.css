@@ -26,6 +26,10 @@ html, body
 
 }
 
+#first-row{
+  padding-top: 13px;
+}
+
 .header-88 {
   background-color: #003054;
   color: white;
@@ -44,3 +48,5 @@ html, body
 .right-88 span {
   color: red;
 }
+
+
