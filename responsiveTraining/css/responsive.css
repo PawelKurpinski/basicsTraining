@@ -3,3 +3,9 @@ img{
   height: auto;
   margin: 0 0 10px 0;
 }
+
+  div.mobile-collapse{
+     width: auto;
+    float: none;
+    margin-right: 0;
+  }
