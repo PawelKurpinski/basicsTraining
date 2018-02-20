@@ -19,7 +19,7 @@ h2, h3 {
 .container {
   max-width: 750px;
   margin: 20px auto 0 auto;
-  padding: 30px;
+  padding: 20px;
   background-color: #FFF;
 }
 
@@ -53,7 +53,7 @@ h2, h3 {
 
 .sidebar-one {
   flex: 1;
-  order: 1;
+  order: 4;
 }
 
 .sidebar-two {
