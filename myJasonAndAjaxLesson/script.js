@@ -16,3 +16,5 @@ var myFavColours = [
         "favFood": "tuna"
     }
 ]
+
+// tak wygląda składania JSON - bardzo podobna do standardowych obiektów
