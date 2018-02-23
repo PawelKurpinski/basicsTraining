@@ -1,8 +1,8 @@
 // przeglądarka ma wbudowane narzędzie XMLHttpRequest pozwala na połączenie z url'em jaki podamy oraz na odebranie lub przesłanie danych; Teraz tworzymy instancję tego narżędzia
 
 var myDiv = document.getElementById('animal-info');
-
 var myButton = document.getElementById('btn');
+
 myButton.addEventListener("click", function(){
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json'); /* metoda get */
@@ -20,8 +20,7 @@ function renderHTML(ourData){
     var myVariable = "";
 
     for (let i = 0; i < ourData.length; i++) {
-        myVariable = array[i];  
-    }
-
-    myDiv.insertAdjacentHTML('beforeEnd', 'myVariable')
+        myVariable += "<p>" + ourData[i].name + "is a " + ourData[i].species +  ".</p>";
+    }   
+    myDiv.insertAdjacentHTML('beforeEnd', myVariable)
 }
