@@ -5,9 +5,9 @@ var myDiv = document.getElementById('animal-info');
 var myButton = document.getElementById('btn');
 myButton.addEventListener("click", function(){
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json'); <!-- metoda get -->
+    ourRequest.open('GET','https://learnwebcode.github.io/json-example/animals-1.json'); /* metoda get */
     ourRequest.onload = function(){
-        // onload mówi nam co mamy zrobić z pobranymi danymi; W ciele można zrobić co chcemy np. wyświetlić pobraną zawartość jako czytelny obiekt
+       // onload mówi nam co mamy zrobić z pobranymi danymi; W ciele można zrobić co chcemy np. wyświetlić pobraną zawartość jako czytelny obiekt
         // console.log(ourRequest.responseText);
         var ourData = JSON.parse(ourRequest.responseText);
         renderHTML(ourData);
@@ -16,6 +16,12 @@ myButton.addEventListener("click", function(){
     ourRequest.send();
 });
 
-function renderHTML(){
-    myDiv.insertAdjacentHTML('beforeEnd', 'test123')
+function renderHTML(ourData){
+    var myVariable = "";
+
+    for (let i = 0; i < ourData.length; i++) {
+        myVariable = array[i];  
+    }
+
+    myDiv.insertAdjacentHTML('beforeEnd', 'myVariable')
 }
