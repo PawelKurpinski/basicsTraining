@@ -17,5 +17,5 @@ myButton.addEventListener("click", function(){
 });
 
 function renderHTML(){
-    myDiv.insertAdjacentHTML('beforend', 'test123')
+    myDiv.insertAdjacentHTML('beforeEnd', 'test123')
 }
