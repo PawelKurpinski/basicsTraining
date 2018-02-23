@@ -26,7 +26,16 @@ function renderHTML(ourData){
     var myVariable = "";
 
     for (let i = 0; i < ourData.length; i++) {
-        myVariable += "<p>" + ourData[i].name + "is a " + ourData[i].species + " ,it likes " + ourData[i].foods.likes[foodCounter] + " and dislikes " + ourData[i].foods.dislikes[foodCounter] + ".</p>";
+        myVariable += "<p>" + ourData[i].name + "is a " + ourData[i].species; + " that it likes to eat ";
+
+        for (let ii = 0; ii < data[i].foods.likes.length; ii++) {
+            if (ii=0) {
+                myVariable += data[i].foods.likes[ii];
+            } else {
+                myVariable += " and " + data[i].foods.likes[ii];
+            }
+        }
+        myVariable =+ '.</p>';
     } 
     myDiv.insertAdjacentHTML('beforeEnd', myVariable)
 }
