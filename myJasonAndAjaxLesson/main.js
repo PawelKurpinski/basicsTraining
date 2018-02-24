@@ -25,17 +25,25 @@ myButton.addEventListener("click", function(){
 function renderHTML(ourData){
     var myVariable = "";
 
-    for (let i = 0; i < ourData.length; i++) {
-        myVariable += "<p>" + ourData[i].name + "is a " + ourData[i].species; + " that it likes to eat ";
+    for (i = 0; i < ourData.length; i++) {
+        myVariable += "<p>" + ourData[i].name + " is a " + ourData[i].species + " that it likes to eat ";
 
-        for (let ii = 0; ii < data[i].foods.likes.length; ii++) {
-            if (ii=0) {
-                myVariable += data[i].foods.likes[ii];
+        for (ii = 0; ii < ourData[i].foods.likes.length; ii++) {
+            if (ii == 0) {
+                myVariable += ourData[i].foods.likes[ii];
             } else {
                 myVariable += " and " + ourData[i].foods.likes[ii];
             }
         }
-        myVariable =+ '.</p>';
+        myVariable =+ ' and dislikes ';
+
+        for (ii = 0; ii < ourData[i].foods.dislikes.length; ii++) {
+            if (ii == 0) {
+              htmlString += ourData[i].foods.dislikes[ii];
+            } else {
+              myVariable += " and " + ourData[i].foods.dislikes[ii];
+            }
+          }
     } 
-    myDiv.insertAdjacentHTML('beforeEnd', myVariable)
+    myDiv.insertAdjacentHTML('beforeend', myVariable)
 }
