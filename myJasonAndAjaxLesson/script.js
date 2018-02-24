@@ -18,3 +18,4 @@ var myFavColours = [
 ]
 
 // tak wygląda składania JSON - bardzo podobna do standardowych obiektów
+
