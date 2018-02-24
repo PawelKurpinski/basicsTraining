@@ -32,7 +32,7 @@ function renderHTML(ourData){
             if (ii=0) {
                 myVariable += data[i].foods.likes[ii];
             } else {
-                myVariable += " and " + data[i].foods.likes[ii];
+                myVariable += " and " + ourData[i].foods.likes[ii];
             }
         }
         myVariable =+ '.</p>';
