@@ -49,3 +49,10 @@ function renderHTML(data){
     } 
     animalContainer.insertAdjacentHTML('beforeend', htmlString);
 }
+
+
+var array = [2,3,6,7,8];
+
+for (let i = 0; i < array.length; i++) {
+   console.log(array[i]);
+};
