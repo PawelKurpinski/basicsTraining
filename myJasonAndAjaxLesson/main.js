@@ -56,3 +56,9 @@ var array = [2,3,6,7,8];
 for (let i = 0; i < array.length; i++) {
    console.log(array[i]);
 };
+
+var seach = document.getElementById("main").getElementsByTagName("li");
+for (let i = 0; i < seach.length; i++) {
+    const element = seach [i].style.color = "blue";
+    
+}
