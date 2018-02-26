@@ -59,13 +59,13 @@ for (let i = 0; i < array.length; i++) {
    console.log(array[i]);
 };
 
-var seach = document.getElementById("main").getElementsByTagName("li");
+var search = document.getElementById("main").getElementsByTagName("li");
 
-for (let i = 0; i < seach.length; i++) {
-    const element = seach[i].style.color = "blue";
-    search [i].addEventListener("click", activateItem)
+for (let i = 0; i < search.length; i++) {
+    const element = search[i].style.color = "blue";
+    search [i].addEventListener("click", activateItem);
 }
-
-function activateItem() {
-    text.innerHTML = 
+ 
+function activateItem(){
+    text.innerHTML = this.innerHTML;
 }
