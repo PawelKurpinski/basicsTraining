@@ -52,20 +52,27 @@ function renderHTML(data){
 
 // new pure JS options
 
-var text = document.getElementById("mainText");
+var mainText = document.getElementById("mainText");
 var array = [2,3,6,7,8];
+let button = document.getElementById("btn");
 
 for (let i = 0; i < array.length; i++) {
    console.log(array[i]);
 };
 
 var search = document.getElementById("main").getElementsByTagName("li");
+console.log(search.length);
 
 for (let i = 0; i < search.length; i++) {
     const element = search[i].style.color = "blue";
+    // Uwaga! mogę pętą dodać zaróno sylowanie jak i eventListener!
     search [i].addEventListener("click", activateItem);
 }
- 
+
+for (var j = 0; j < search.length; j++) {
+    const elementTwo = search[j].innerHTML = "Hello World "+[j+1]
+    }
+
 function activateItem(){
-    text.innerHTML = this.innerHTML;
+    mainText.innerHTML = this.innerHTML;
 }
