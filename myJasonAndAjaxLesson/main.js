@@ -1,3 +1,5 @@
+// @ts-check
+
 // przeglądarka ma wbudowane narzędzie XMLHttpRequest pozwala na połączenie z url'em jaki podamy oraz na odebranie lub przesłanie danych; Teraz tworzymy instancję tego narżędzia
 var pageCounter = 1;
 var animalContainer = document.getElementById('animal-info');
@@ -51,10 +53,11 @@ function renderHTML(data){
 }
 
 // new pure JS options
-
+var newElem = document.getElementById("main");
 var mainText = document.getElementById("mainText");
 var array = [2,3,6,7,8];
-let button = document.getElementById("btn");
+var button = document.getElementById("btn");
+var newCounter = 1;
 
 for (let i = 0; i < array.length; i++) {
    console.log(array[i]);
@@ -64,7 +67,7 @@ var search = document.getElementById("main").getElementsByTagName("li");
 console.log(search.length);
 
 for (let i = 0; i < search.length; i++) {
-    const element = search[i].style.color = "blue";
+    // const element = search[i].style.color = "blue";
     // Uwaga! mogę pętą dodać zaróno sylowanie jak i eventListener!
     search [i].addEventListener("click", activateItem);
 }
@@ -76,3 +79,11 @@ for (var j = 0; j < search.length; j++) {
 function activateItem(){
     mainText.innerHTML = this.innerHTML;
 }
+
+button.addEventListener("click", newAdding);
+
+function newAdding() {
+   newElem.innerHTML += "<li>New Element " + newCounter + "</li>";
+   newCounter++;   
+}
+// doskonałe rozwiązanie
