@@ -86,4 +86,5 @@ function newAdding() {
    newElem.innerHTML += "<li>New Element " + newCounter + "</li>";
    newCounter++;   
 }
-// doskonałe rozwiązanie
+// doskonałe rozwiązanie polega na dodaniu bez konieczności tworzenia pętli zmiennej inkrementowanej
+//newCounter++ 
