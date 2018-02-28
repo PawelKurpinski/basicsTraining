@@ -87,4 +87,8 @@ function newAdding() {
    newCounter++;   
 }
 // doskonałe rozwiązanie polega na dodaniu bez konieczności tworzenia pętli zmiennej inkrementowanej
-//newCounter++ 
+//newCounter++
+
+
+let test = 1;
+test = 10;
