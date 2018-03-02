@@ -87,8 +87,8 @@ function newAdding() {
    newCounter++;   
 }
 // doskonałe rozwiązanie polega na dodaniu bez konieczności tworzenia pętli zmiennej inkrementowanej
-//newCounter++
+//newCounter++ Zastępuje pełną pętlę np. for
 
 
-let test = 1;
-test = 10;
+var dom = 10;
+var dom = 12;
