@@ -13,7 +13,6 @@ var person = {
     }
 }
 
-
 function Animal(getName, getSound){
 	this.name = getName,
 	this.sound = getSound(){
@@ -23,9 +22,6 @@ function Animal(getName, getSound){
 
 var dog = new Animal("Reksio","wow wow");
 	dog.sound();
-
-
-
 
 function Person(name){
     this.name = name;
