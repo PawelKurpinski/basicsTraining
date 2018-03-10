@@ -1,0 +1,31 @@
+img{
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+
+div.one-third {
+  width: 47,5%;
+}
+
+div.one-third-second {
+  margin: 0;
+}
+
+div.one-third-last{
+  clear: both;
+  float: none;
+  width: auto;
+  padding: 20px 0 0 0 ;
+}
+
+@media screen and (max-width: 500px){
+  div.mobile-collapse{
+    width: auto;
+    float: none;
+    margin-right: 0;
+  }
+
+  .hide-mobile {
+  display:none;
+}
