@@ -6,7 +6,17 @@ new Vue({
   },
   methods:{
     greet: function(time){
-      return 'Good ' + time;
+      return 'Good ' + time + ' ' + this.name;
     }
   }
 });
+
+new Vue({
+  el: '#dupa',
+  data:{
+    name: 'Jan',
+    job: 'inna'
+  },
+  methods:
+
+})
