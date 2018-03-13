@@ -11,12 +11,3 @@ new Vue({
   }
 });
 
-new Vue({
-  el: '#dupa',
-  data:{
-    name: 'Jan',
-    job: 'inna'
-  },
-  methods:
-
-})
