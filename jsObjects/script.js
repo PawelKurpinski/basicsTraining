@@ -15,9 +15,9 @@ var person = {
 
 function Animal(getName, getSound){
 	this.name = getName,
-	this.sound = getSound(){
-	console.log(getSound)
-        }
+    this.sound = getSound ()
+        { console.log(getSound)
+    }
 }
 
 var dog = new Animal("Reksio","wow wow");
