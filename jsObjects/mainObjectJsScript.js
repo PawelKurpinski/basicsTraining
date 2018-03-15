@@ -75,7 +75,10 @@ var person = {
 
 //----------------------------------------------------------------------------------------------------------------------------------------- 
 // TWORZENIE OBIEKTU NA BAZIE OBIEKTU WBUDOWANEGO
+
+
 myNewObject = new Object;    /* dodaję właściwość */
+
 myNewObject.info = 'Jestem Pawła nowym obiektem';
 console.log('fist stage: '+ myNewObject.info); 
 
