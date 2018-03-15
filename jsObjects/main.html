@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Programowanie obiektowe</title>
+        <script>
+            function myObjectType(){
+                this.info = 'Jestem zupełnie nowym obiektem';
+                this.showInfo = function(){
+                    alert(this.info);
+                }
+                this.setInfo = function (newInfo) {
+                    this.info = newInfo;
+                }
+            }
+            var myNewObject1 = new myObjectType();
+            var myNewObject2 = new myObjectType();
+        </script>
+    </head>
+    
+    <body>
+        <input type="button" value="Pokaż informację 1" onclick="myNewObject1.showInfo()" />
+        <input type="button" value="Pokaż informację 2" onclick="myNewObject2.showInfo()" />
+        <input type="button" value="Zmień informację o obiekcie object2" onclick="myNewObject2.setInfo('Nowa informacja!')" />
+    </body>
+    </html>
