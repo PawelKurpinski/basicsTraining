@@ -134,8 +134,71 @@ console.log(myNewObject1.setInfo("Oto nowe informacje obiektowe!")); /* nadpisan
 //-----------------------------------------------------------------------------------------------------------------
 // użycie funkcji KONSTRUKTORA przyjmującej ARGUMENTY
 
+function Car(Color, Year, Make, Miles){
+    this.color = Color;
+    this.year = Year;
+    this.make = Make;
+    this.odometerReading = Miles;
+    this.setOdometer = function(newMiles){
+        this.odometerReading = newMiles;   
+    }
+}
+
+var car1 = new Car("bordowy", "1999", "Skoda", 193000);
+var car2 = new Car("srebrny", "2000", "Żuk", 320000);
+car1.setOdometer(220000); /* zmiana przebiegu poprzez funkcję zawartą w obiecie Car */
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // ROZSZERZANIE OBIEKTÓW - słowo kluczowe PROTOTYPE - jest niezbędne gdy do obiektu zostały już utworzone instancje. 
 //                         prototype nadaje nowe metody i właściwości zarówno obiektowi jak i jego instancjom.
 
+Car.prototype.makeSound = function () {
+    alert(this.make + " makes Wrrrumm!");
+}
 
+// -------------------------------------------------------------------------------------------------------------------------------------------
+// DZIEDZICZENIE - w JS jest emulowane poprzez słowo kluczowe PROTOTYPE
+
+function Pet() {
+    this.animal = "";
+    this.name = "";
+    this.setAnimal = function (newAnimal) {
+        this.animal = newAnimal;
+    }    
+    this.setName = function (newName) {
+        this.name = newName;
+    }
+}
+/* tworzę instancję Pet'a */
+
+var myCat = new Pet();
+myCat.setAnimal = "kot";
+myCat.setName = "Mruczek";
+
+
+/* teraz chcę na bazie  obiektu Pet stworzyć inny obiekt Dog, który będzie miał poza "dziedziczonymi także swoje indywidualne "cechy"*/
+
+function Dog() {                /* najpierw tworzę poprzez funkcję konstruktora nowy obiekt Dog */
+    this.breed = "";
+    this.setBreed = function(newBreed){
+        this.breed = newBreed;
+    }
+}
+
+/* Kluczowa linijka!!!!!! poniżej poprzez słowo prototype umożliwiam dziedziczenie */
+
+Dog.prototype = new Pet();
+
+var myDog = new Dog;
+myDog.setAnimal = "pies";
+myDog.setName = "Reksio";
+myDog.setBreed("Chart");
+
+// Rozszerzanie obiektów wbudowanych JS - również poprzez słowo kluczowe prototype
+
+String.prototype.backwards = function(){
+    var out = '';
+    for(var i = this.length-1; i >= 0; i--){
+        out += this.substr(i, 1);
+    }
+    return out;
+}
