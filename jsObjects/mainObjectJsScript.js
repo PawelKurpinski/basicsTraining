@@ -150,6 +150,8 @@ function Car(Color, Year, Make, Miles){
 var car1 = new Car("bordowy", "1999", "Skoda", 193000);
 var car2 = new Car("srebrny", "2000", "Żuk", 320000);
 car1.setOdometer(220000); /* zmiana przebiegu poprzez funkcję zawartą w obiecie Car */
+
+
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // ROZSZERZANIE OBIEKTÓW - słowo kluczowe PROTOTYPE - jest niezbędne gdy do obiektu zostały już utworzone instancje. 
 //                         prototype nadaje nowe metody i właściwości zarówno obiektowi jak i jego instancjom.
