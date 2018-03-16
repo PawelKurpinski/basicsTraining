@@ -4,7 +4,9 @@ new Vue({
   data:{
     name: 'Paweł',
     job: 'Developer',
-    website: 'http://www.thenetninja.co.uk'
+    website: 'http://www.thenetninja.co.uk',
+    website2: 'http://www.mojeauto.pl',
+    mytag:"<a href='http://www.thenetninja.co.uk'>my Second link</a>"
   },
   methods:{
     greet: function(time){
