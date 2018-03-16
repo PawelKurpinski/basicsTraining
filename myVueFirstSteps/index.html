@@ -15,8 +15,14 @@
   <h1>{{name}}</h1>
   <p>job: {{job}}</p>
   <h2>{{greet('Morning!')}}</h2>
+
   <a v-bind:href=
     "website">This is the link!</a>
+
+  <a :href="website2">mega stronka</a> <!-- można używać v-bind: zamiennie z samym dwukropkiem ale v-bind jest przejrzysty -->
+
+  <input type="text" :value="name">  <!-- tu z kolei łączmy pole z atrybutem name z JS -->
+
   </div>
 
   <script src="app.js"></script>
