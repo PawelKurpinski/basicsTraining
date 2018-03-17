@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Algorithms
+  
+  </title>
+</head>
+<body>
+  <h1>This is my world od Algorithms</h1>
+
+  <form id="szukanie" action=""><div>
+    <table border="0" cellpadding="5">
+    <tr><td>Tablica liczb (wartości oddzielone przecinkiem, bez spacji):</td><td><input type="text" name="tablica" value="1,5,2,19,52,0"></td></tr>
+    <tr><td>Szukana wartosc:</td><td><input type="text" name="szukana" value="19"></td></tr>
+    <tr><td colspan="2"><button onclick="return szukaj_z_wartownikiem()">Szukaj</button></td></tr></table>
+    </div></form>
+
+
+  <script>
+function szukaj_z_wartownikiem()
+{
+// pobierz wartosci tablicy liczb
+var a = document.forms['szukanie'].tablica.value.split(',');
+// pobierz obiekt do szukania
+var szukana = document.forms['szukanie'].szukana.value;
+ 
+// wstaw wartownika
+a[a.length] = szukana;
+ 
+// szukaj - algorytm z wartownikiem
+var i = 0;
+while (a[i] != szukana) i++; //szukaj zadanej wartosci
+ 
+if (i == a.length-1){
+//jezeli znaleziono wartownika
+alert('Szukanej wartosci nie ma w tablicy');
+}
+else {
+//jezeli znaleziono wartosc, ale to nie jest wartownik
+alert('Szukana wartosc znajduje sie w tablicy pod indeksem ' + i + '\n(liczac indeksy od 0)');
+}
+ 
+return;
+}
+
+    // var tablica = [2, 3, 6, 88, 876, 33, 23];
+    // var szukanaLiczba = 88;
+    // var liczbaZnalezionych = 0;
+    // var wartownik = 88;
+    // wartownik = tablica[tablica.length];
+    // var i = 0;
+    
+    // function szukaj() {
+    //   while (tablica[i]!==wartownik) i++;
+    //   for (let i = 0; i < tablica.length; i++) {
+    //     if  {
+        
+    //     } else {
+    //       return
+    //     }
+        
+    //   }
+    // }
+    // szukaj();
+
+  </script>
+</body>
+</html>
