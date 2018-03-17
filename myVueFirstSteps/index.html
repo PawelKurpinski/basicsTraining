@@ -23,6 +23,13 @@
 
   <input type="text" :value="name">  <!-- tu z kolei łączmy pole z atrybutem name z JS -->
 
+  <p v-html="myTag"></p> <!-- ciekawy sposób na przekazanie linka już jako taga html zapisanego w pliku JS -->
+
+  <!-- EVENTS -->
+  <button v-on:click='add'>Add a Year</button>
+  <button v-on:click='subtract'>Subtract a Year</button>
+  <p>My age is only {{myAge}}</p>
+
   </div>
 
   <script src="app.js"></script>
