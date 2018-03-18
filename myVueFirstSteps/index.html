@@ -16,8 +16,7 @@
   <p>job: {{job}}</p>
   <h2>{{greet('Morning!')}}</h2>
 
-  <a v-bind:href=
-    "website">This is the link!</a>
+  <a v-bind:href="website">This is the link!</a><!-- zapis standardowy -->
 
   <a :href="website2">mega stronka</a> <!-- można używać v-bind: zamiennie z samym dwukropkiem ale v-bind jest przejrzysty -->
 
@@ -30,8 +29,14 @@
   <button v-on:click='subtract'>Subtract a Year</button>
   <p>My age is only {{myAge}}</p>
 
+  <button v-on:click='go'>To jest mój nowy button</button>
+  <a v-html="myPage">Super stronka!</a>
+
+  <a v-bind:href="mySuperLink"></a>
+
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js">
+  </script>
 </body>
 </html>

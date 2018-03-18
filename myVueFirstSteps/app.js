@@ -8,6 +8,7 @@ new Vue({
     website2: 'http://www.mojeauto.pl',
     myTag:'<a href="http://www.thenetninja.co.uk">my link</a>',
     myAge: 38,
+    myPage:'<a href="http://www.mojeauto.pl">moje aoto</a>',
   },
   methods:{
     greet: function(time){
@@ -18,16 +19,9 @@ new Vue({
     },
     subtract: function () {
       this.myAge--;
+    },
+    go:function(){
+      alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
     }
   }
 });
-
-
-new Vew({
-  data:{
-
-  },
-  methods:{
-
-  },
-})
