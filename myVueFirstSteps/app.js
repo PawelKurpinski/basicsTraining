@@ -8,7 +8,7 @@ new Vue({
     website2: 'http://www.mojeauto.pl',
     myTag:'<a href="http://www.thenetninja.co.uk">my link</a>',
     myAge: 38,
-    myPage:'<a href="http://www.mojeauto.pl">moje aoto</a>',
+    myPage:'<a href="http://www.mojeauto.pl" target="_blank">moje auto</a>',
   },
   methods:{
     greet: function(time){
