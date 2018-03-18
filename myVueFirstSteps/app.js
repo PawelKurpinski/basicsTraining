@@ -21,3 +21,13 @@ new Vue({
     }
   }
 });
+
+
+new Vew({
+  data:{
+
+  },
+  methods:{
+
+  },
+})
