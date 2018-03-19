@@ -22,7 +22,8 @@ new Vue({
     },
     go:function(){
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
-    }
+    },
+
   }
 });
 
