@@ -179,7 +179,7 @@ function Pet() {
     }
 }
 /* tworzę instancję Pet'a */
-
+ 
 var myCat = new Pet();
 myCat.setAnimal = "kot";
 myCat.setName = "Mruczek";
