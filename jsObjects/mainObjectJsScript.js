@@ -77,7 +77,12 @@ var person = {
 // TWORZENIE OBIEKTU NA BAZIE OBIEKTU WBUDOWANEGO
 
 
-myNewObject = new Object;    /* dodaję właściwość */
+myNewObject = new Object;    
+
+
+// ---------------------------------------------------------------------------
+
+/* dodaję właściwość */
 
 myNewObject.info = 'Jestem Pawła nowym obiektem';
 console.log('fist stage: '+ myNewObject.info); 
@@ -122,14 +127,14 @@ function myNewObjectType(){
         this.info = newInfo;  /* ta druga metoda pobiera argument newInfo i używa
         go do nadpisania wartości właściwośći info */
     }
-}
+};
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
 // TWORZENIE INSTANCJI OBIEKTÓW a więc obiektów posiadających metody i właściwości zdefioniowane w głównej funkcji konstruktora 
 
-var x = myNewObject.info;
 var myNewObject1 = new myNewObjectType();  /* widać więc zmienną, nazwę nowego obiektu oraz słowo kluczowe new i niejako wywołanie funkcji konstruktora */
 var myNewObject2 = new myNewObjectType();  
+var x = myNewObject.info;
 
 console.log(myNewObject1.showInfo()); /* wywołuję metodę stworzoną dla obiektu myNewObjectType */
 console.log(myNewObject1.setInfo("Oto nowe informacje obiektowe!")); /* nadpisanie właściwość info */
