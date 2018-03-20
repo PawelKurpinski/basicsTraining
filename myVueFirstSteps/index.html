@@ -11,9 +11,11 @@
 <body>
   <h1>This is my live server preview</h1>
 
-  <div id="canvas"></div>
-  
-  <div id="vue-app">
+  <!-- co ciekawe nie trzeba pisać updateXT(event) choć zostają przekazane dane
+    o położeniu coursora-->
+    
+    <div id="vue-app">
+      <div id="canvas" v-on:mousemove = "updateXY">{{x}},{{y}}</div>
   <h1>{{name}}</h1> 
   <p>job: {{job}}</p>
   <h2>{{greet('Morning!')}}</h2>

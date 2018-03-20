@@ -9,6 +9,8 @@ new Vue({
     myTag:'<a href="http://www.thenetninja.co.uk">my link</a>',
     myAge: 38,
     myPage:'<a href="http://www.mojeauto.pl" target="_blank">moje auto</a>',
+    x: 0,
+    y: 0,
   },
   methods:{
     greet: function(time){
@@ -25,6 +27,10 @@ new Vue({
     go:function(){
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
     },
+    updateXY:function(event){
+      console.log(event);
+                                                                     
+    }
 
   }
 });
