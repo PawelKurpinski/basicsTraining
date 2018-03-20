@@ -10,7 +10,7 @@ new Vue({
     myAge: 38,
     myPage:'<a href="http://www.mojeauto.pl" target="_blank">moje auto</a>',
     x: 0,
-    y: 0,
+    y: 0
   },
   methods:{
     greet: function(time){
@@ -28,8 +28,8 @@ new Vue({
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
     },
     updateXY:function(event){
-      this.x += x.offsetX;
-      this.y += y.offsetY;                                                               
+      this.x = event.offsetX;
+      this.y = event.offsetY;                                                               
     },
   }
 });
