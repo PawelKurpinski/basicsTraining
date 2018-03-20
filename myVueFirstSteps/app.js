@@ -18,9 +18,9 @@ new Vue({
       // this.myAge++;
       this.myAge += inc; /* ciekawa zmaiana związana z modem powyżej */
     },
-    subtract: function (dec) { /* dodaję dec bo chę wywołać tę funkcję z atrybutem 10 lub 1 */
+    subtract: function(dec) { /* dodaję dec bo chę wywołać tę funkcję z atrybutem 10 lub 1 */
       // this.myAge--;
-      this.age -= dec;
+      this.myAge -= dec;
     },
     go:function(){
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
