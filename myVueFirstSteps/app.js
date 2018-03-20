@@ -28,10 +28,9 @@ new Vue({
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
     },
     updateXY:function(event){
-      console.log(event);
-                                                                     
-    }
-
+      this.x += x.offsetX;
+      this.y += y.offsetY;                                                               
+    },
   }
 });
 
