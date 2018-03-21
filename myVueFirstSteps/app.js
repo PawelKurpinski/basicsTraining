@@ -28,7 +28,7 @@ new Vue({
       alert("ale jazda! Ten "+this.name+" to niezły gagatek!");
     },
     updateXY:function(event){
-      this.x = event.offsetX;
+      this.x = event.offsetX;  /* to jest ciekawe, funcja przyjmuje obiekt zawierający dane o położeniu coursora nad divem z eventem mouseover! */
       this.y = event.offsetY;                                                               
     },
   }

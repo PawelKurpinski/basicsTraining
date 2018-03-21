@@ -15,7 +15,7 @@
     o położeniu coursora-->
     
     <div id="vue-app">
-      <div id="canvas" v-on:mousemove = "updateXY">{{x}},{{y}}</div>
+      <div id="canvas" v-on:mousemove = "updateXY">{{x}},{{y}}</div> <!-- obiekt jest przekazywany bez konieczności pisania updateXY(event) -->
   <h1>{{name}}</h1> 
   <p>job: {{job}}</p>
   <h2>{{greet('Morning!')}}</h2>
@@ -28,6 +28,7 @@
 
   <p v-html="myTag"></p> <!-- ciekawy sposób na przekazanie linka już jako taga html zapisanego w pliku JS -->
 
+  
 
   <!-- EVENTS -->
 
