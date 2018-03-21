@@ -20,12 +20,9 @@
 
 <body>
 
-  <div class="container" style='background:skyblue'>
-    <h1>Fixed Container</h1>
 
     <!-- ZAWSZE KOLUMNY W KONTENERZE!!! -->
     <div class="container" style="border:black solid 1px">
-      
       <div class="row">
         <!-- element z klasą ROW niekoniecznie DIV! -->
         <div class="col-sm-6">col-sm-6</div>
@@ -47,10 +44,36 @@
         <div class="col-3"></div>
         <div class="col-3"></div>
       </div>
+     
+    <!-- bez KONKRETNEJ WARTOŚCI COL! MOŻNA tylko z oznaczaniem liter np. md i w danym kontenerze SAME się rozmieszczą! za pomocą wbudowanego flex'a tzw. FLEX GRID SYSTEM -->
+     
+      <div class="row"style="background: green">
+        <!-- element z klasą ROW niekoniecznie DIV! -->
+        <!-- samo col-md może wystarczyć -->
+        <div class="col-md-6"></div>
+        <div class="col-md"></div>
+        <div class="col-md"></div>
+        <div class="col-md"></div>
+      </div>
+
+      <div class="row">
+          <!-- ZA MAŁO DOKŁADNIE SPRECYZOWANYCH KOLUMN NA PEŁNY WIESZ czyli 12 col -->
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
+      </div>
+     
+      <div class="row justify-content-md-center">
+          <!-- ZA MAŁO DOKŁADNIE SPRECYZOWANYCH KOLUMN NA PEŁNY WIESZ czyli 12 col ALE!!! dodaję do klasy JUSTIFY-CONTENT-MD-CENTER I BOOOM!!! -->
+          <div class="col-md-2">justify-content-md</div>
+          <div class="col-md-2">justify-content-md</div>
+          <div class="col-md-2">justify-content-md</div>
+      </div>
       
     </div>
 
-  </div>
+
+<br><br><br>
 
   <div class="container-fluid" style='background:rgba(0, 102, 128, 0.719)'>
     <h1>Fluid container</h1>
