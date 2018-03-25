@@ -10,8 +10,12 @@
 </head>
 <body>
   <h1>This is my live server preview</h1>
-  
-  <div id="vue-app">
+
+  <!-- co ciekawe nie trzeba pisać updateXT(event) choć zostają przekazane dane
+    o położeniu coursora-->
+    
+    <div id="vue-app">
+      <div id="canvas" v-on:mousemove = "updateXY">{{x}},{{y}}</div> <!-- obiekt jest przekazywany bez konieczności pisania updateXY(event) -->
   <h1>{{name}}</h1> 
   <p>job: {{job}}</p>
   <h2>{{greet('Morning!')}}</h2>
@@ -24,17 +28,19 @@
 
   <p v-html="myTag"></p> <!-- ciekawy sposób na przekazanie linka już jako taga html zapisanego w pliku JS -->
 
+  
 
   <!-- EVENTS -->
 
-  <button v-on:click='add'>Add a Year</button>
-  <button v-on:click='subtract'>Subtract a Year</button>
+  <button v-on:click='add(1)'>Add a Year</button>
+  <button v-on:dblclick='add(10)'>Add 10 Years</button>
+  <button v-on:click='subtract(1)'>Subtract a Year</button>
+  <button v-on:dblclick='subtract(10)'>Subtract 10 Years</button>
   <p>My age is only {{myAge}}</p>
 
   <button v-on:click='go'>To jest mój nowy button</button>
   
   <a v-html="myPage">Super stronka!</a>
-  
   <a v-html="myPage"></a>
 
   </div>

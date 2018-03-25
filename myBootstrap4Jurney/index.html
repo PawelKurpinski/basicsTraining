@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <!-- Training css -->
+  <style>
+    .row div {
+      padding: 20px 10px;
+      border: 1px solid
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-info text-white text-center">   <!-- poza kontenerem będzie na całą szerokość strony ZAWSZE -->
+        
+     <div class="container">    <!-- ta klasa  wyśrodkowuje napis! -->
+       <h1 class="display-1">Welcome do my dojo</h1>
+       <p class="lead">A guiding light for less enlightened...</p>
+     </div>
+    
+    </div>
+
+    <!-- ZAWSZE KOLUMNY W KONTENERZE!!! -->
+    <div class="container" style="border:black solid 1px">
+      <div class="row">
+        <!-- element z klasą ROW niekoniecznie DIV! -->
+        <div class="col-sm-6">col-sm-6</div>
+        <div class="col-sm-6">col-sm-6</div>
+      </div>
+      
+      <div class="row" style="background:rosybrown">
+        <!-- element z klasą ROW niekoniecznie DIV! -->
+        <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+        <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
+      </div>
+      
+      <div class="row"style="background: yellow">
+        <!-- element z klasą ROW niekoniecznie DIV! -->
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+        <div class="col-3"></div>
+      </div>
+     
+    <!-- bez KONKRETNEJ WARTOŚCI COL! MOŻNA tylko z oznaczaniem liter np. md i w danym kontenerze SAME się rozmieszczą! za pomocą wbudowanego flex'a tzw. FLEX GRID SYSTEM -->
+     
+      <div class="row"style="background: green">
+        <!-- element z klasą ROW niekoniecznie DIV! -->
+        <!-- samo col-md może wystarczyć -->
+        <div class="col-md-6"></div>
+        <div class="col-md"></div>
+        <div class="col-md"></div>
+        <div class="col-md"></div>
+      </div>
+
+      <div class="row">
+          <!-- ZA MAŁO DOKŁADNIE SPRECYZOWANYCH KOLUMN NA PEŁNY WIESZ czyli 12 col -->
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
+          <div class="col-md-2"></div>
+      </div>
+     
+      <div class="row justify-content-md-center">
+          <!-- ZA MAŁO DOKŁADNIE SPRECYZOWANYCH KOLUMN NA PEŁNY WIESZ czyli 12 col ALE!!! dodaję do klasy JUSTIFY-CONTENT-MD-CENTER I BOOOM!!! -->
+          <div class="col-md-2 flex-last">1 justify-content-md</div>
+          <div class="col-md-2 flex-first">2 justify-content-md</div>
+          <div class="col-md-2">3 justify-content-md</div>
+      </div>
+      
+    </div>
+
+
+<br><br><br>
+
+  <div class="container-fluid" style='background:rgba(0, 102, 128, 0.719)'>
+    <h1>Fluid container</h1>
+
+    <h1>Hello, World!</h1>
+    <h2>This is H2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit officia hic quaerat error facilis repudiandae blanditiis
+      odio deleniti. Deserunt soluta aliquam quos dolorum odio ipsam repellat quidem nam, laudantium odit.</p>
+
+    <ul>
+      <li>Potatoes</li>
+      <li>Onions</li>
+      <li>Chicken</li>
+    </ul>
+    <form>
+      <label>Text filed</label>
+      <input type="text" placeholder="placeholeder">
+      <input type="submit" value="click me">
+    </form>
+
+  </div>
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
