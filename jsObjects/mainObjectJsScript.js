@@ -86,8 +86,8 @@ myNewObject = new Object;
 myNewObject.info = 'Jestem Pawła nowym obiektem';
 console.log('fist stage: '+ myNewObject.info); 
 
-
-function myFunc(){       /* dodaję metodę  */
+/* dodaję metodę  */
+function myFunc(){       
     alert("ale zabawa");
 };
 myNewObject.showInfo = myFunc;
@@ -98,7 +98,7 @@ function myFuncSecond(){
 };
 myNewObject.showInfoSecond = myFuncSecond;
 
-// -------------------------------------------------------------------------------
+
 // UWAGA! ładniej można to napisać za pomocą FUNKCJI ANONIMOWEJ! 
 
 myNewObject.showInfoThird = function() {
@@ -131,7 +131,7 @@ function myNewObjectType(){
 };
 
 // -----------------------------------------------------------------------------------------------------------------------------------------
-// TWORZENIE INSTANCJI OBIEKTÓW a więc obiektów posiadających metody i właściwości zdefioniowane w głównej funkcji konstruktora 
+/* III / I */// TWORZENIE INSTANCJI OBIEKTÓW a więc obiektów posiadających metody i właściwości zdefioniowane w głównej funkcji konstruktora 
 
 var myNewObject1 = new myNewObjectType();  /* widać więc zmienną, nazwę nowego obiektu oraz słowo kluczowe new i niejako wywołanie funkcji konstruktora */
 var myNewObject2 = new myNewObjectType();  
@@ -141,7 +141,7 @@ console.log(myNewObject1.showInfo()); /* wywołuję metodę stworzoną dla obiek
 console.log(myNewObject1.setInfo("Oto nowe informacje obiektowe!")); /* nadpisanie właściwość info */
 
 //-----------------------------------------------------------------------------------------------------------------
-// użycie funkcji KONSTRUKTORA przyjmującej ARGUMENTY
+/* III / II */// użycie funkcji KONSTRUKTORA przyjmującej ARGUMENTY
 
 function Car(Color, Year, Make, Miles){
     this.color = Color;
