@@ -64,7 +64,7 @@
 
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
-//najprostszy zapis OBIEKTU za pomocą LITERAŁU 
+/* I *///najprostszy zapis OBIEKTU za pomocą LITERAŁU 
 
 var person = {
     firstName:"John",
@@ -74,11 +74,10 @@ var person = {
 };
 
 //----------------------------------------------------------------------------------------------------------------------------------------- 
-// TWORZENIE OBIEKTU NA BAZIE OBIEKTU WBUDOWANEGO
 
+/* II */// TWORZENIE OBIEKTU NA BAZIE OBIEKTU WBUDOWANEGO
 
 myNewObject = new Object;    
-
 
 // ---------------------------------------------------------------------------
 
@@ -116,7 +115,9 @@ myNewObject.showInfoThird();
 console.log('last stage: '+ myNewObject.info); 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------
-// TWORZENIE OBIEKTU za pomocną WYRAŻENIA FUNKCYJNEGO inaczej poprzez użycie FUNKCJI KONSTRUKTORA OBIEKTU
+
+
+/* III */// TWORZENIE OBIEKTU za pomocną WYRAŻENIA FUNKCYJNEGO inaczej poprzez użycie FUNKCJI KONSTRUKTORA OBIEKTU
 
 function myNewObjectType(){
     this.info = 'Też jestem obiektem';
